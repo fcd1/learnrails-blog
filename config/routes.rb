@@ -1,5 +1,10 @@
-Rails.application.routes.draw do
-  get 'welcome/index'
+Blog::Application.routes.draw do
+
+  #fcd1, 28Jul14: Added the following line
+  resources :articles
+
+  # fcd1, 28Jul14: Commented out the following line:
+  # get 'welcome/index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
